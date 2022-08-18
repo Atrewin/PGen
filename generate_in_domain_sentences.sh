@@ -4,7 +4,7 @@
 
 input_file=data/paralle/De/phoenix2014T.train.de #PATH TO THE TEXT SIDE OF SLT DATASET
 model_path=Models #YOUR PART TOSAVE THE FINETUNING GPT
-model_path=/apdcephfs/share_916081/jinhuiye/Projects/GPT2/Model/Source/german-gpt2
+
 
 case_num=20
 save_path=data/monolingual/ #PATH TO SAVE DA SENTENCES
