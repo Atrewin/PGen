@@ -15,3 +15,6 @@ You can edit and `bash generate_in_domain_sentences.sh` to get monolingal data. 
 
 You can follow [fairseq](https://github.com/facebookresearch/fairseq) or [mT5](https://github.com/google-research/multilingual-t5) to train the translation models (e.g. text-to-gloss or gloss-to-text) 
 
+
+# In-domain Monolingual Text Data
+We give some generated data for SLT in `data/monolingual/GPT*`. The texts can be considered when applying scaling BT.
