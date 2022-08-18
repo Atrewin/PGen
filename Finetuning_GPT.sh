@@ -1,11 +1,8 @@
-TRAIN_FILE=/apdcephfs/share_916081/jinhuiye/Projects/GPT2/Data/Training/PH4T/case_prompt_with_number_traning_data_30_sample_10000.txt
-TEST_FILE=/apdcephfs/share_916081/jinhuiye/Projects/GPT2/Data/Training/PH4T/case_prompt_with_number_traning_data_30_sample_100.txt
+TRAIN_FILE=De/phoenix2014T.train.de # PATH TO THE TEXT SIDE OF SLT DATASET
+TEST_FILE=De/phoenix2014T.dev.de
 
-OUTPUT=/apdcephfs/share_916081/jinhuiye/Projects/GPT2/Model/De/case_prompt_with_number
-
-cd /apdcephfs/share_916081/jinhuiye/Projects/transformers/examples/pytorch/language-modeling
-export PATH=/apdcephfs/share_916081/jinhuiye/Environments/anaconda3/envs/GPT/bin/:$PATH
-Model=/apdcephfs/share_916081/jinhuiye/Projects/GPT2/Model/Source/german-gpt2
+Model=dbmdz/german-gpt2 #YOUR PART TO THE PRE-TRAINED GPT (i.e., https://huggingface.co/dbmdz/german-gpt2)
+OUTPUT=Models #YOUR PART TO　SAVE THE FINETUNING GPT
 
 CUDA_VISIBLE_DEVICES=0,1,2 python run_clm.py \
 --model_name_or_path ${Model} \
