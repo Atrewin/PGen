@@ -16,8 +16,8 @@ Sign language gloss translation aims to translate the sign glosses into spoken l
 ## Reference Performance
 We conduct both intrinsic and extrinsic evaluations for the proposed PGen approach.
 
-### Intrinsic Evaluations
-**1. The word frequencies for the four monolingual corpus which gained by different methods.**
+### 1. Intrinsic Evaluations
+**A) The word frequencies for the four monolingual corpus which gained by different methods.**
 
 
 <div align="center">
@@ -25,16 +25,16 @@ We conduct both intrinsic and extrinsic evaluations for the proposed PGen approa
     <p class="image-caption">Figure 2: The word frequency distribution on different types of monolingual corpora. The X-axis represents different words, while the Y-axis represents word frequency.</p>
 </div>
 
-### Extrinsic Evaluations
+### 2. Extrinsic Evaluations
 
-**1. The performance of the gloss-to-text translation task when scaling the used monolingual data from our PGen and the retrieved approa** 
+**B) The performance of the gloss-to-text translation task when scaling the used monolingual data from our PGen and the retrieved approa** 
 <div align="center">
     <img src="/image/bleu_vs_scale.jpg" width="50%" title="Framework of Self-training with Uncertainty-Based Sampling."</img>
     <p class="image-caption">Figure 3: The translation performance of back-translation when scaling the used monolingual data from our PGen and the retrieved approach. The red dashed line denotes the baseline model without back-translation. Best viewed in color. </p>
 </div>
 
 
-**2. The performance of Gloss-to-text translation on Phoenix2014T, CSL-daily and ASLG-PC12.**
+**C) The performance of Gloss-to-text translation on Phoenix2014T, CSL-daily and ASLG-PC12.**
 
 <div align="center">
     <img src="/image/gloss_text.jpg" width="70%" title="Framework of Self-training with Uncertainty-Based Sampling."</img>
