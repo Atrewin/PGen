@@ -20,7 +20,7 @@ from torch.utils.data import Dataset, DataLoader
 import random
 
 class Prompt_prefix(Dataset):
-    def __init__(self, spoken_file="Data/Sign/phoenix2014T.dev.de", gloss_file="Data/Sign/phoenix2014T.dev.gloss.lower",
+    def __init__(self, spoken_file="Data/Sign/DSL.dev.de", gloss_file="Data/Sign/DSL.dev.gloss.lower",
              ):
 
 
@@ -64,7 +64,7 @@ class Prompt_prefix(Dataset):
             for time in range(times):
                 words_list = or_sentence.split(" ")
                 # L1 = random.sample(range(0, len(words_list)), math.ceil(len(words_list)*0.2))
-                # 感觉还是保持乱序好些
+
                 keywords_index = random.sample(range(0, len(words_list)), math.ceil(len(words_list) * keep_rate))
                 if keep_word_order:
                     keywords_index.sort()

@@ -9,7 +9,7 @@ class DomainDataByGPT():
         self.model_path = model_path
 
     def main_case_prompt(self, case_num=10, sample_num=15,
-                   spoken_file=r"data/paralle/De/phoenix2014T.train.de",
+                   spoken_file=r"data/paralle/De/DSL.train.de",
                     save_file="data/monolingual/GPT_domain.de.txt"
                    ):
         dataset = Prompt_prefix(spoken_file=spoken_file,
@@ -94,8 +94,8 @@ class DomainDataByGPT():
 
         print("  ")
     def main_prefix_prompt(self, times=1, keep_rate=0.2, save_file="Data/Sign/Generated_data/De/de_keyword_prompt_keep_order.txt"):
-        dataset = Prompt_prefix(spoken_file=r"Data/Sign/phoenix2014T.train.de",
-                                gloss_file=r"Data/Sign/phoenix2014T.train.gloss.lower")
+        dataset = Prompt_prefix(spoken_file=r"Data/Sign/DSL.train.de",
+                                gloss_file=r"Data/Sign/DSL.train.gloss.lower")
 
         data_row = dataset.prefix_prompt(times=times, keep_rate=keep_rate)
 
@@ -265,7 +265,7 @@ if __name__ == '__main__':
     # time.sleep(5)
 
     parser.add_argument('--input_file',
-                        default="data/paralle/De/phoenix2014T.train.de",
+                        default="data/paralle/De/DSL.train.de",
                         help='PATH TO THE TEXT SIDE OF SLT DATASET')
 
     parser.add_argument('--case_num',
@@ -284,7 +284,7 @@ if __name__ == '__main__':
                         help='PATH TO SAVE DA SENTENCES')
     opt = parser.parse_args()
     #
-    # build_keyword_promt_finetuning_data()
+
 
     A = DomainDataByGPT(model_path=opt.model_path)
     A.main_case_prompt(case_num=int(opt.case_num), sample_num=opt.generation_num, save_file=opt.save_file,

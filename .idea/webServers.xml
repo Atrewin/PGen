@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="d785cb1c-19e4-4c7c-8c92-4a7e7b728e9e" name="PGen">
-        <fileTransfer rootFolder="/apdcephfs/share_916081/jinhuiye/Projects/PGen" accessType="SFTP" host="9.134.252.45" port="36000" sshConfigId="8e43350c-382f-4484-9c87-6237008c3c6e" sshConfig="root@9.134.252.45:36000 password">
+        <fileTransfer rootFolder="/home/yejinhui" accessType="SFTP" host="10.105.2.41" port="22" sshConfigId="8e43350c-382f-4484-9c87-6237008c3c6e" sshConfig="HKUSTGZ password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
