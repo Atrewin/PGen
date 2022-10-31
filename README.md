@@ -66,5 +66,7 @@ You can find them in `data/PGen_monolingual/*` and get a quick start when apply 
 
 You can follow [fairseq](https://github.com/facebookresearch/fairseq) or [mT5](https://github.com/google-research/multilingual-t5) to train the translation models (e.g. text-to-gloss or gloss-to-text) 
 
+We give some based script in `./G2T/[ASL | DSL | CSL]`, which are also work for T2G by reversing source language tag and target one. 
+
 
 
