@@ -2,7 +2,21 @@
 <project version="4">
   <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="Datasets">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="HKUSTGZ password">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="MHCI">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -12,7 +26,17 @@
       <paths name="PGen">
         <serverdata>
           <mappings>
-            <mapping deploy="/Projects/PGen" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="PGen" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/Projects/PGen/G2T/phoenix2014T/results/DKD" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="RBM1">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
@@ -23,7 +47,7 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="SLT_temp2">
+      <paths name="VAE">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
