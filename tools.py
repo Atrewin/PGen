@@ -70,7 +70,25 @@ def lower(source_file=None):
     writer2text(data_rows=row_data, file_path=source_file+".lower")
 
 
+import jieba
+
+def char_to_word_level(input_file, output_file):
+    with open(input_file, "r", encoding="utf-8") as infile, open(output_file, "w", encoding="utf-8") as outfile:
+        for line in infile:
+            line = line.strip().replace(" ", "")
+            # 使用jieba分词库对文本进行分词
+            words = jieba.cut(line, cut_all=False)
+            # 将分词后的结果连接起来，用空格分隔
+            word_level_line = " ".join(words)
+            outfile.write(word_level_line + "\n")
+
+
+
+
 if __name__ == '__main__':
+    input_file = "/home/yejinhui/Projects/PGen/G2T/CSL/data/rawdata/Zh/temp.zh.unique"
+    output_file = "/home/yejinhui/Projects/PGen/G2T/CSL/data/rawdata/Zh/temp.zh.unique.word"
+    char_to_word_level(input_file, output_file)
 
     pass
 
